@@ -33,16 +33,16 @@
     </Window.Resources>
     <Grid>
         <TabControl>
-            <TabItem Header="TabControl">
-                <TabControl ItemsSource="{Binding Tabs1}"
-                            ItemTemplate="{StaticResource TabControlItemTemplate}"
-                            ContentTemplate="{StaticResource TabControlContentTemplate}"/>
-            </TabItem>
             <TabItem Header="hc:TabControl">
                 <hc:TabControl ItemsSource="{Binding Tabs2}"
                                ShowCloseButton="True" IsDraggable="True" IsAnimationEnabled="True"
                                ItemTemplate="{StaticResource TabControlItemTemplate}"
                                ContentTemplate="{StaticResource TabControlContentTemplate}"/>
+            </TabItem>
+            <TabItem Header="TabControl">
+                <TabControl ItemsSource="{Binding Tabs1}"
+                            ItemTemplate="{StaticResource TabControlItemTemplate}"
+                            ContentTemplate="{StaticResource TabControlContentTemplate}"/>
             </TabItem>
         </TabControl>
     </Grid>
