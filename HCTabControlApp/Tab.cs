@@ -30,7 +30,7 @@ namespace HCTabControlApp
 
         public string NewHeader { get; set; }
         
-        public ICommand UpdateHeadingCommand => new Command<object>(() =>
+        public ICommand UpdateHeaderCommand => new Command<object>(() =>
         {
             Header = NewHeader;
         });

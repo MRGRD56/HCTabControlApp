@@ -22,11 +22,11 @@
                     <TextBox Text="{Binding NewHeader, UpdateSourceTrigger=PropertyChanged}"
                              Margin="10 0" Width="200">
                         <TextBox.InputBindings>
-                            <KeyBinding Key="Enter" Command="{Binding UpdateHeadingCommand}"/>
+                            <KeyBinding Key="Enter" Command="{Binding UpdateHeaderCommand}"/>
                         </TextBox.InputBindings>
                     </TextBox>
                     <Button Content="OK" Style="{StaticResource ButtonPrimary}"
-                            Command="{Binding UpdateHeadingCommand}"/>
+                            Command="{Binding UpdateHeaderCommand}"/>
                 </StackPanel>
             </Grid>
         </DataTemplate>
